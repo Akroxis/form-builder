@@ -81,7 +81,7 @@
     </AddNewItemPop>
     <AddNewItemPop
       v-if="isNewSectionPopVisible"
-      title="Add new question"
+      title="Add new section"
       @close="isNewSectionPopVisible = false"
     >
       <template v-slot:body>

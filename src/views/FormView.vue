@@ -31,7 +31,7 @@
 
     <AddNewItemPop
       v-if="isNewPagePopVisible"
-      title="Add new question"
+      title="Add new page"
       @close="isNewPagePopVisible = false"
     >
       <template v-slot:body>
