@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <FormView></FormView>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import FormView from "./views/FormView";
 export default {
   name: "app",
-  components: {
-    HelloWorld
-  }
+  components: { FormView }
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+@import "./assets/common-styles.scss";
+html {
+  font-family: "Roboto-Regular", "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #f8f8f8;
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("./fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("./fonts/Roboto-Bold.ttf");
 }
 </style>
